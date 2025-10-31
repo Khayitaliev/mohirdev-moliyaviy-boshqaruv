@@ -11,6 +11,7 @@
     --salary-month-cl:#C4C4CC;
     --chevron-box-cl:#015F43;
     --chevron-text-cl:#8D8D99;
+    --salary-minus-cl:#F75A68;
 }
 
 @font-face {
@@ -83,7 +84,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: clamp(15px,3vw,32px);
-    margin-bottom:2.75rem ;
+    margin-bottom:clamp(1.5rem,3vw,2.75rem) ;
 }
 
 .card{
@@ -117,6 +118,7 @@ body{
     display: flex;
     justify-content: space-between;
     gap: clamp(0.6rem,3vw,1rem);
+    margin-bottom: clamp(0.6rem,3vw,1.2rem);
  
 }
 
@@ -144,7 +146,7 @@ body{
     border-radius: 0.313rem;
     background-color: var(--salary-box-cl);
     margin: 8px 0;
-    padding: 20px 32px;
+    padding:  clamp(12px,3vw,20px) clamp(15px,3vw,32px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -154,17 +156,19 @@ body{
 .company-name,
 .salary-date{
     color: var(--salary-month-cl);
+    font-size: clamp(0.6rem,3vw,1rem);
 }
 
-.salary{
+.salary-plus{
     color: var(--search-btn-cl);
 }
 
+.salary-minus{
+    color:var(--salary-minus-cl) ;
+}
 .salary-month{
     flex-grow:1;
 }
-
-
 
 .chevron__wrapper{
     display: flex;
