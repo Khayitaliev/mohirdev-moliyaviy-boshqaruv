@@ -1,3 +1,26 @@
+:root{
+    --bg-color:#202024;
+    --white-color:#ffff;
+    --transaction-button-cl:#00875F;
+    --card-bg:#323238;
+    --card-text-cl:#E1E1E6;
+    --active-card-cl:#015F43;
+    --input-cl:#121214;
+    --search-btn-cl:#00b37E;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto/Roboto-Bold.ttf);
+    font-weight: 700;
+    font-style: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-style: swap;
+}
 *,
 *::before,
 *::after{
@@ -12,3 +35,100 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
+button{
+    cursor: pointer;
+}
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--bg-color);
+}
+
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.75rem 0;
+}
+
+.header-brand{
+    display: flex;
+    align-items: center;
+    gap: 0 16px;
+}
+
+.header-brand span{
+    font-size: 1.6rem;
+    color:var(--white-color);
+}
+
+.transaction-button{
+    background-color: var(--transaction-button-cl);
+    border: none;
+    color: var(--white-color);
+    font-size: 1rem;
+    padding: 12px 20px;
+    border-radius: 0.375rem;
+    line-height: 160%;
+}
+
+.cards__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom:2.75rem ;
+}
+
+.card{
+    padding: 24px 24px 24px 32px;
+    background-color: var(--card-bg);
+    border-radius: 0.375rem;
+    color: var(--card-text-cl);
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card-top span{
+    font-size: 1rem;
+}
+
+.card-bottom h3{
+    font-size: 2rem;
+}
+
+.cards__wrapper .card:nth-child(3){
+    background-color: var(--active-card-cl);
+}
+
+.search__wrapper form{
+    padding: 18px 0;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#search{
+    background-color: var(--input-cl);
+    border: none;
+    padding: 1rem;
+    border-radius: 0.375rem;
+    flex-grow: 1;
+}
+
+.search-btn{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 32px;
+     background: none;
+    color: var(--transaction-button-cl); 
+    border: 1px solid var(--transaction-button-cl);
+    border-radius: 0.375rem;
+
+}
+
