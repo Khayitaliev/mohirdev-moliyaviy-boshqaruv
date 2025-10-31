@@ -44,6 +44,7 @@
 button{
     cursor: pointer;
 }
+
 body{
     font-family: 'Roboto',sans-serif;
     background-color: var(--bg-color);
@@ -53,7 +54,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.75rem 0;
+    padding: clamp(1.5rem,3vw,2.75rem) 0;
 }
 
 .header-brand{
@@ -63,7 +64,8 @@ body{
 }
 
 .header-brand span{
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: clamp(1.2rem,4vw ,1.6rem);
     color:var(--white-color);
 }
 
@@ -71,8 +73,9 @@ body{
     background-color: var(--transaction-button-cl);
     border: none;
     color: var(--white-color);
-    font-size: 1rem;
-    padding: 12px 20px;
+    font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
+    padding: clamp(8px, 1vw + 6px, 12px) clamp(14px, 1vw + 10px, 20px);
+;
     border-radius: 0.375rem;
     line-height: 160%;
 }
