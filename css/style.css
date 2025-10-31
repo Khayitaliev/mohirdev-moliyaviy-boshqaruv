@@ -103,11 +103,11 @@ body{
 }
 
 .card-top span{
-    font-size: 1rem;
+    font-size: clamp(0.8rem,3vw,1rem);
 }
 
 .card-bottom h3{
-    font-size: clamp(1.4rem,3vw,2rem);
+    font-size: clamp(1.2rem,3vw,2rem);
 }
 
 .cards__wrapper .card:nth-child(3){
@@ -150,6 +150,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .salary-month,
@@ -208,3 +209,4 @@ body{
     color: var(--chevron-text-cl);
 
 }
+
