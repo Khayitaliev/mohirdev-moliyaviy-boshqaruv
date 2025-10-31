@@ -156,7 +156,14 @@ body{
 .company-name,
 .salary-date{
     color: var(--salary-month-cl);
-    font-size: clamp(0.6rem,3vw,1rem);
+  
+}
+
+.salary,
+.salary-date,
+.salary-month,
+.company-name{
+  font-size: clamp(0.6rem,3vw,1rem);
 }
 
 .salary-plus{
