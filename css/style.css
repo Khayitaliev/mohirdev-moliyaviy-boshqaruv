@@ -82,7 +82,7 @@ body{
 .cards__wrapper{
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: clamp(15px,3vw,32px);
     margin-bottom:2.75rem ;
 }
 
@@ -100,12 +100,13 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
 .card-top span{
     font-size: 1rem;
 }
 
 .card-bottom h3{
-    font-size: 2rem;
+    font-size: clamp(1.4rem,3vw,2rem);
 }
 
 .cards__wrapper .card:nth-child(3){
@@ -113,16 +114,16 @@ body{
 }
 
 .search__wrapper form{
-    padding: 18px 0;
     display: flex;
-    gap: 1rem;
     justify-content: space-between;
+    gap: clamp(0.6rem,3vw,1rem);
+ 
 }
 
 #search{
     background-color: var(--input-cl);
     border: none;
-    padding: 1rem;
+    padding: clamp(0.6rem,3vw,1rem);
     border-radius: 0.375rem;
     flex-grow: 1;
 }
@@ -130,9 +131,9 @@ body{
 .search-btn{
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 14px 32px;
-     background: none;
+    gap: clamp(6px,2vw,12px);
+    padding:clamp(8px,3vw,14px) clamp(22px,3vw,32px);
+    background: none;
     color: var(--transaction-button-cl); 
     border: 1px solid var(--transaction-button-cl);
     border-radius: 0.375rem;
