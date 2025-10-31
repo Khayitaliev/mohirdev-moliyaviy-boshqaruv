@@ -147,9 +147,10 @@ body{
     background-color: var(--salary-box-cl);
     margin: 8px 0;
     padding:  clamp(12px,3vw,20px) clamp(15px,3vw,32px);
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1.8fr 0.8fr 1fr 0.7fr;
     align-items: center;
+    gap: clamp(0.6rem,3vw,1rem);
 }
 
 .salary-month,
@@ -166,6 +167,7 @@ body{
   font-size: clamp(0.6rem,3vw,1rem);
 }
 
+
 .salary-plus{
     color: var(--search-btn-cl);
 }
@@ -173,7 +175,11 @@ body{
 .salary-minus{
     color:var(--salary-minus-cl) ;
 }
-.salary-month{
+
+
+.salary,
+.company-name,
+.salary-date{
     flex-grow:1;
 }
 
