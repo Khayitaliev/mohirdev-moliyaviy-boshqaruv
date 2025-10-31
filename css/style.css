@@ -150,7 +150,7 @@ body{
     display: grid;
     grid-template-columns: 1.8fr 0.8fr 1fr 0.7fr;
     align-items: center;
-    gap: clamp(0.6rem,3vw,1rem);
+    gap: clamp(0.4rem,3vw,1rem);
 }
 
 .salary-month,
