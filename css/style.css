@@ -7,6 +7,8 @@
     --active-card-cl:#015F43;
     --input-cl:#121214;
     --search-btn-cl:#00b37E;
+    --salary-box-cl:#29292E;
+    --salary-month-cl:#C4C4CC;
 }
 
 @font-face {
@@ -34,6 +36,7 @@
 .container{
     max-width: 1140px;
     margin: 0 auto;
+    padding: 0 3vw;
 }
 
 button{
@@ -132,3 +135,29 @@ body{
 
 }
 
+.salary-box{
+    background-color: var(--salary-box-cl);
+    margin: 8px 0;
+    padding: 20px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.salary-month,
+.company-name,
+.salary-date{
+    color: var(--salary-month-cl);
+}
+
+.salary{
+    color: var(--search-btn-cl);
+}
+
+.salary-month{
+    flex-grow:1;
+}
+
+.company-name{
+    margin: 0 100px ;
+}
