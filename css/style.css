@@ -199,23 +199,24 @@ header::before{
     flex-grow:1;
 }
 
-.chevron__wrapper{
+.chevron__wrapper,
+.chevron-inner{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .chevron-inner{
-    display: flex;
-    margin: 46px 0;
+    gap: 0 clamp(4px,3vw,8px);
+    margin-top: clamp(18px,3vw,46px);
 }
+
 
 
 .chevron-inner span{
     width: clamp(20px,5vw,40px);
     height: clamp(20px,5vw,40px);
     border-radius: 6px; 
-    margin: 0 clamp(4px,2vw,8px);
     display: flex;
     justify-content: center;
     align-items: center;
