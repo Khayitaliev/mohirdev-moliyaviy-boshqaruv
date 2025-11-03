@@ -71,7 +71,7 @@ header::before{
     background-color:var(--input-cl) ;
     top: 0;
     left: 0;
-    height: clamp(120px, 25vw, 212px);
+    height: clamp(140px, 20vw, 212px);
     z-index: -1;
 }
 .header-brand{
