@@ -208,7 +208,7 @@ header::before{
 
 .chevron-inner{
     gap: 0 clamp(4px,3vw,8px);
-    margin-top: clamp(18px,3vw,46px);
+    margin: clamp(18px,3vw,46px);
 }
 
 
