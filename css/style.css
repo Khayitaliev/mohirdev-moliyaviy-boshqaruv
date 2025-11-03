@@ -12,7 +12,6 @@
     --chevron-box-cl:#015F43;
     --chevron-text-cl:#8D8D99;
     --salary-minus-cl:#F75A68;
-    --bg-shape-cl:;
 }
 
 @font-face {
@@ -74,6 +73,7 @@ header::before{
     height: clamp(140px, 20vw, 212px);
     z-index: -1;
 }
+
 .header-brand{
     display: flex;
     align-items: center;
@@ -210,14 +210,16 @@ header::before{
     margin: 46px 0;
 }
 
+
 .chevron-inner span{
-    width: 40px;
-    height: 40px;
+    width: clamp(20px,5vw,40px);
+    height: clamp(20px,5vw,40px);
     border-radius: 6px; 
-    margin: 0 8px;
+    margin: 0 clamp(4px,2vw,8px);
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: clamp(0.5rem,3vw,1rem);
 }
 
 .chevron-inner span:nth-child(2){
