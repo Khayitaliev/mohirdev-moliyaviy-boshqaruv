@@ -12,6 +12,7 @@
     --chevron-box-cl:#015F43;
     --chevron-text-cl:#8D8D99;
     --salary-minus-cl:#F75A68;
+    --bg-shape-cl:;
 }
 
 @font-face {
@@ -26,6 +27,7 @@
     font-weight: 400;
     font-style: swap;
 }
+
 *,
 *::before,
 *::after{
@@ -51,6 +53,10 @@ body{
     background-color: var(--bg-color);
 }
 
+header{
+    position: relative;
+}
+
 .header__wrapper{
     display: flex;
     justify-content: space-between;
@@ -58,6 +64,16 @@ body{
     padding: clamp(1.5rem,3vw,2.75rem) 0;
 }
 
+header::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    background-color:var(--input-cl) ;
+    top: 0;
+    left: 0;
+    height: clamp(120px, 25vw, 212px);
+    z-index: -1;
+}
 .header-brand{
     display: flex;
     align-items: center;
